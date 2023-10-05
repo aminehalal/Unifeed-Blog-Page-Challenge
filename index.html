@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
     <title>Unifeed Blog Page</title>
+    <style>
+        #menu-toggle:checked + #list-menu{
+            display: block;
+        }
+        
+    </style>
 </head>
 <body class="px-6">
     <nav>
@@ -13,13 +19,16 @@
                 <img src="Assets/Logo.svg" alt="Logo" class="">
             </div>
             <div class="flex flex-col items-center">
-                <img class="sm:hidden cursor-pointer" type="checkbox" src="Assets/Hamburger Menu.svg" alt="menu" id="menu-icon">
 
-                <ul class="list-none hidden sm:flex" id="list-menu">
-                    <li name="item"><a href="#" class="p-3">Home</a></li>
-                    <li name="item"><a href="#" class="p-3">Features</a></li>
-                    <li name="item"><a href="#" class="p-3">Pricing</a></li>
-                    <li name="item"><a href="#" class="p-3 bg-orange-500 rounded-md font-bold">Subscribe</a></li>
+                <label for="menu-toggle" class="sm:hidden">
+                    <img src="Assets/Hamburger Menu.svg" class="cursor-pointer">
+                </label>
+                <input type="checkbox" class="hidden" id="menu-toggle">
+                <ul class="list-none hidden text-center sm:flex" id="list-menu">
+                    <li name="item" class="p-3 sm:p-0"><a href="#" class="sm:p-3">Home</a></li>
+                    <li name="item" class="p-3 sm:p-0"><a href="#" class="sm:p-3">Features</a></li>
+                    <li name="item" class="p-3 sm:p-0"><a href="#" class="sm:p-3">Pricing</a></li>
+                    <li name="item" class="p-3 sm:p-0"><a href="#" class="p-2 sm:p-3 bg-orange-500 rounded-md font-bold">Subscribe</a></li>
                 </ul>
             </div>
         </div>

@@ -1,3 +1,6 @@
 /style/style.css
 /node_modules
 /Design
+package.json
+package-lock.json
+tailwind.config.js
